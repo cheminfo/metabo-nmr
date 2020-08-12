@@ -1,0 +1,50 @@
+{
+  "name": "metabo-nmr",
+  "version": "0.0.0",
+  "description": "",
+  "private": true,
+  "dependencies": {
+    "delay": "^4.4.0",
+    "nmr-predictor": "^1.2.0",
+    "openchemlib": "^7.2.3",
+    "spectra-data": "^3.4.11"
+  },
+  "scripts": {
+    "eslint": "eslint src --ext js,jsx",
+    "eslint-fix": "npm run eslint -- --fix",
+    "test": "npm run test-coverage && npm run eslint",
+    "test-coverage": "jest --coverage",
+    "test-only": "jest"
+  },
+  "eslintConfig": {
+    "extends": "cheminfo-react",
+    "parser": "babel-eslint",
+    "rules": {
+      "import/no-unresolved": "off"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cheminfo/metabo-nmr.git"
+  },
+  "keywords": [],
+  "author": "Luc Patiny",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cheminfo/metabo-nmr/issues"
+  },
+  "homepage": "https://github.com/cheminfo/metabo-nmr#readme",
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "devDependencies": {
+    "@types/jest": "^26.0.9",
+    "eslint": "^7.6.0",
+    "eslint-config-cheminfo": "^5.0.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-jest": "^23.20.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "jest": "^26.3.0",
+    "prettier": "^2.0.5"
+  }
+}
